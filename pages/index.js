@@ -63,27 +63,27 @@ export default function Home() {
   }
 
   return (
-
     <div className={styles.container}>
       <h1 className={styles.h1}>Discord Membership Reward</h1>
-      {/* <br     /> */}
-      <h2>If you are among our Discord community you will be Rewarded</h2>
+        <h2>If you are among our Discord community you will be Rewarded</h2>
       <p className={styles.explain}>
-      You will be Rewarded if you are a Member   {" "}
+        You will be Rewarded if you are a Member   {" "}
         <a
-          href="https://discord.gg/TxuM3GxRwG"
+          href="https://www.linkedin.com/in/ali-ibrahim-mohammed-a18389239/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.purple}
         >
-            With US  {" "}
+          AlfaChain
         </a>
-           that You will get your own NFT for free on the OpenSea website because in the future, community members who have the authority to be members of the people who own this NFT will be determined...
+        &apos;s that You will get your own NFT for free on the OpenSea website because in the future, community members who have the authority to be members of the people who own this NFT will be determined...
       </p>
+
       {/* <p className={styles.explain}>
-        This demo checks if you is a member of your Discord server, and
-        allows to you  to mint an NFT if they are.
+        This demo checks if the user is a member of your Discord server, and
+        allows them to mint an NFT if they are.
       </p> */}
+
       <hr className={styles.divider} />
 
       <SignIn />
@@ -101,7 +101,7 @@ export default function Home() {
             <div className={styles.nftPreview}>
               <b>Your NFT:</b>
               <img src={session?.user.image} />
-              <p>{session.user.name}&apos;s AliChain Discord Member NFT</p>
+              <p>{session.user.name}&apos;s AlfaChain Discord Member NFT</p>
             </div>
 
             <Web3Button
@@ -118,7 +118,7 @@ export default function Home() {
             <p>Looks like you are not a part of the Discord server.</p>
             <a
               className={styles.mainButton}
-              href={`https://discord.gg/TxuM3GxRwG`}
+              href={`https://discord.com/invite/AlfaChain`}
             >
               Join Server
             </a>

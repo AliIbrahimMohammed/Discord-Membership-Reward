@@ -7,7 +7,7 @@ export default async function generateNftSignature(req, res) {
     const session = await unstable_getServerSession(req, res, authOptions);
 
     // Put Your Discord Server ID here
-    const discordServerId = "1090988698482528337";
+    const discordServerId = "1100414432988909598";
 
     // Grab the claimer address (currently connected address) out of the request body
     const { claimerAddress } = JSON.parse(req.body);
@@ -60,9 +60,9 @@ export default async function generateNftSignature(req, res) {
     const signedPayload = await nftCollection.erc721.signature.generate({
         to: claimerAddress,
         metadata: {
-            name: `Alichain Discord Member NFT`,
+            name: `AlfaChain Discord Member NFT`,
             image: `${session.user.image}`,
-            description: `An NFT rewarded for being a part of the Alichain community!`,
+            description: `An NFT rewarded for being a part of the AlfaChain community!`,
         },
     });
 
